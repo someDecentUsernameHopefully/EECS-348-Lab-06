@@ -3,11 +3,14 @@
 <head>
     <title>Multiplication Table Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+    <script src="Scripts/largeFormSubmission.js"></script>
 </head>
 <body>
     <h1>EECS 348 Lab Seven Practice Four</h1>
     <form action="generateTable.php" method="get">
-        <p>Size of the multiplication table: <input type="number" name="size" /></p>
+        <p>Size of the multiplication table: <input class="size" type="number" name="size" /></p>
+        <p id="largeSizeWarn" style="display: none">WARNING: Multiplication tables with large sizes may take a long time to generate!</p>
         <input type="submit" />
     </form>
 </body>

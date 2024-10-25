@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <?php
-	$size = $_GET["size"];
+	try {
+		$size = intval($_GET["size"]);
+		$sizeStr = strval($size);
+
+		if($size < 1) {
+			throw new Exception("The table's size cannot be less than 1!");
+		}
+	} catch (Exception $E) {
+		echo "The form value for table size is not set or is not valid!";
+		exit(1);
+	}
 ?>
 <html>
 <head>
 	<title><?php
-		$sizeStr = strval($size);
 		echo "{$sizeStr}x{$sizeStr} Multiplication Table";
 	?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
