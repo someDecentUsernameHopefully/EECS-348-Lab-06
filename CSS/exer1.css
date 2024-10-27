@@ -1,0 +1,55 @@
+#heading {
+    background-color: navy;
+    color: beige;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100px;
+}
+
+#content {
+    margin-top: 100px;
+    background-color: beige;
+    padding: 8px;
+    color: navy;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#mail:link {
+    color: beige;
+}
+
+#mail:hover {
+    color: white;
+}
+
+#mail:active {
+    color: yellow;
+}
+
+#mail:visited {
+    color: lightgray;
+}
+
+h1 {
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+body {
+    margin: 0;
+}
+
+.donot {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
